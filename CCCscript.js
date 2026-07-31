@@ -151,7 +151,7 @@ What do you do?`,
 },
 
 {
-    question: `A commuter using a wheelchair is waiting to board the train, but the priority boarding door is being blocked by other commuters.`,
+    question: `A commuter using a wheelchair is waiting to board the train, but other commuters are blocking the priority boarding door.`,
 
     answers: [
 
@@ -199,7 +199,7 @@ What do you do?`,
         },
 
         {
-            text: "Assume someone else who needs the seat more will decide whether to offer theirs.",
+            text: "Someone else will offer theirs, if needed.",
             scores: { N: 2 }
         }
 
