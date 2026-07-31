@@ -509,9 +509,6 @@ function showResult() {
 }
 
 /* ---------- Restart Quiz ---------- */
-
-const restartButton = document.getElementById("restart-btn");
-
 restartButton.addEventListener("click", function () {
 
     // Reset question number
