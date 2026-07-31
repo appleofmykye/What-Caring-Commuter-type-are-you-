@@ -508,11 +508,37 @@ function showResult() {
 
 }
 
-
 /* ---------- Restart Quiz ---------- */
 
-restartButton.addEventListener("click", () => {
-    alert("clicked!");
+const restartButton = document.getElementById("restart-btn");
+
+restartButton.addEventListener("click", function () {
+
+    // Reset question number
+    currentQuestion = 0;
+
+    // Clear previous answers
+    chosenAnswers = [];
+
+    // Reset MBTI scores
+    scores.E = 0;
+    scores.I = 0;
+    scores.S = 0;
+    scores.N = 0;
+    scores.T = 0;
+    scores.F = 0;
+    scores.J = 0;
+    scores.P = 0;
+
+    // Hide result screen
+    resultScreen.style.display = "none";
+
+    // Show quiz again
+    quizContainer.style.display = "block";
+
+    // Restart from question 1
+    loadQuestion();
+
 });
 
 /* ---------- Start Quiz ---------- */
