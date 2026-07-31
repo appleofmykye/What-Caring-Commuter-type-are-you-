@@ -7,8 +7,6 @@ const answerButtons = document.querySelectorAll(".answer-btn");
 const quizContainer = document.querySelector(".quiz-container");
 
 const resultScreen = document.getElementById("result");
-const resultTitle = document.getElementById("mbti-result");
-const resultDescription = document.getElementById("result-description");
 const restartButton = document.getElementById("restart-btn");
 
 
