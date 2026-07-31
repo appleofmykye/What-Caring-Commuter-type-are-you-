@@ -511,10 +511,6 @@ function showResult() {
 }
 
 
-/* ---------- Start Quiz ---------- */
-
-loadQuestion();
-
 /* ---------- Restart Quiz ---------- */
 
 restartButton.addEventListener("click", () => {
@@ -523,16 +519,14 @@ restartButton.addEventListener("click", () => {
 
     chosenAnswers = [];
 
-    scores = {
-        E: 0,
-        I: 0,
-        S: 0,
-        N: 0,
-        T: 0,
-        F: 0,
-        J: 0,
-        P: 0
-    };
+    scores.E = 0;
+    scores.I = 0;
+    scores.S = 0;
+    scores.N = 0;
+    scores.T = 0;
+    scores.F = 0;
+    scores.J = 0;
+    scores.P = 0;
 
     resultScreen.style.display = "none";
     quizContainer.style.display = "block";
@@ -540,3 +534,8 @@ restartButton.addEventListener("click", () => {
     loadQuestion();
 
 });
+
+
+/* ---------- Start Quiz ---------- */
+
+loadQuestion();
